@@ -1,0 +1,100 @@
+<app-header />
+
+<section class="default-section-padding">
+  <p
+    class="font-40 line-height-48 text-white font-weight-800 text-align-left zeroPaddingBottom zeroMarginBottom text-align-center"
+  >
+    Contact
+  </p>
+</section>
+
+<section class="minHeightScreen">
+  <div class="container pt-2">
+    <div class="formContainer">
+      <div class="formBody">
+        <form [formGroup]="form">
+          <div class="row">
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mt-2">
+              <label for="name"> *Name </label>
+              <input
+                formControlName="name"
+                placeholder="Enter your name"
+                id="name"
+                type="text"
+              />
+              <small
+                *ngIf="
+                  f['name'].touched &&
+                  f['name'].invalid &&
+                  f['name'].errors['required']
+                "
+                >name is required</small
+              >
+              <small
+                *ngIf="
+                  f['name'].touched &&
+                  f['name'].invalid &&
+                  f['name'].errors['pattern']
+                "
+                >name should not have numbers or special characters</small
+              >
+            </div>
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mt-2">
+              <label for="email"> *Email </label>
+              <input
+                formControlName="email"
+                placeholder="Enter your email"
+                id="email"
+                type="text"
+              />
+              <small
+                *ngIf="
+                  f['email'].touched &&
+                  f['email'].invalid &&
+                  f['email'].errors['required']
+                "
+                >e-mail is required</small
+              >
+              <small
+                *ngIf="
+                  f['email'].touched &&
+                  f['email'].invalid &&
+                  f['email'].errors['email']
+                "
+                >e-mail should be of type e-mail</small
+              >
+            </div>
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12 mt-2">
+              <label for="name"> *Message </label>
+              <textarea
+                formControlName="message"
+                placeholder="Enter your message"
+                id="message"
+                type="text"
+                [rows]="7"
+              ></textarea>
+              <small
+                *ngIf="
+                  f['message'].touched &&
+                  f['message'].invalid &&
+                  f['message'].errors['required']
+                "
+                >message is required</small
+              >
+            </div>
+
+            <div class="submitBtn">
+              <button (click)="submit()" class="default-btn">
+                Send message
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer />
+
+<p-toast></p-toast>

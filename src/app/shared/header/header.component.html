@@ -1,0 +1,97 @@
+<section class="default-section-padding">
+  <div class="container-xl py-2">
+    <nav>
+      <div class="headerHolder">
+        <ul class="headerFlex">
+          <li><button class="default-btn mx-3">Resume</button></li>
+          <li
+            routerLink="/contact"
+            routerLinkActive="text-rose"
+            class="font-16 font-weight-700 line-height-16 zeroPaddingBottom zeroMarginBottom mx-3 cursor-pointer"
+          >
+            Contact
+          </li>
+          <li
+            routerLink="/about"
+            routerLinkActive="text-rose"
+            class="font-16 font-weight-700 line-height-16 zeroPaddingBottom zeroMarginBottom mx-3 cursor-pointer"
+          >
+            About
+          </li>
+          <li
+            routerLink="/projects"
+            routerLinkActive="text-rose"
+            class="font-16 font-weight-700 line-height-16 zeroPaddingBottom zeroMarginBottom mx-3 cursor-pointer"
+          >
+            Projects
+          </li>
+          <li
+            routerLink="/"
+            [routerLinkActiveOptions]="{exact:true}"
+            routerLinkActive="text-rose"
+            class="font-16 font-weight-700 line-height-16 zeroPaddingBottom zeroMarginBottom mx-3 cursor-pointer"
+          >
+            Home
+          </li>
+        </ul>
+      </div>
+      <div class="headerHolderPhone">
+        <ul class="phoneHeaderFlex zeroMarginBottom zeroPaddingBottom">
+          <li>
+            <i
+              (click)="open(content)"
+              class="fa-solid fa-bars text-white fa-2x"
+            ></i>
+          </li>
+          <li><button class="default-btn">Resume</button></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<ng-template #content let-offcanvas>
+  <div class="offcanvas-body position-relative">
+    <ul class="phoneUl">
+      <li
+        routerLink="/"
+        [routerLinkActiveOptions]="{exact:true}"
+        routerLinkActive="text-rose"
+        class="font-16 font-weight-700 line-height-16 zeroPaddingBottom zeroMarginBottom mx-3 cursor-pointer"
+        (click)="offcanvas.dismiss('Cross click')"
+      >
+        Home
+      </li>
+      <li
+        routerLink="/projects"
+        routerLinkActive="text-rose"
+        class="font-16 font-weight-700 line-height-16 zeroPaddingBottom zeroMarginBottom mx-3 cursor-pointer"
+        (click)="offcanvas.dismiss('Cross click')"
+      >
+        Projects
+      </li>
+      <li
+        routerLink="/about"
+        routerLinkActive="text-rose"
+        class="font-16 font-weight-700 line-height-16 zeroPaddingBottom zeroMarginBottom mx-3 cursor-pointer"
+        (click)="offcanvas.dismiss('Cross click')"
+      >
+        About
+      </li>
+      <li
+        routerLink="/contact"
+        routerLinkActive="text-rose"
+        class="font-16 font-weight-700 line-height-16 zeroPaddingBottom zeroMarginBottom mx-3 cursor-pointer"
+        (click)="offcanvas.dismiss('Cross click')"
+      >
+        Contact
+      </li>
+      <button
+        class="default-btn closeOffcanvas mx-3"
+        (click)="offcanvas.dismiss('Cross click')"
+      >
+        CLOSE
+      </button>
+    </ul>
+  </div>
+</ng-template>

@@ -1,0 +1,263 @@
+<section>
+  <app-header></app-header>
+  <section class="default-section-padding">
+    <div class="heroSection">
+      <div class="widthFullPercent">
+        <div class="positionDp">
+          <div class="dpHolder my-3">
+            <img class="responsiveImageCover" src="assets/images/dp.jpg" />
+          </div>
+        </div>
+        <p
+          class="font-36 line-height-36 text-white font-weight-800 text-align-center pt-4"
+        >
+          Hi, I'm Akash Vishwakarma <span class="wave-hand">👋</span>
+        </p>
+        <p
+          class="font-120 line-height-100 text-grey font-weight-800 text-align-center pt-4"
+        >
+          FULL STACK <br />
+          WEB DEVELOPER.
+        </p>
+        <p
+          class="font-20 line-height-28 text-grey font-weight-800 text-align-center pt-3"
+        >
+          A passionate
+          <span class="text-blue">
+          <ngx-typed-writer
+            class="text-blue"
+            [strings]="typedStrings"
+            [cursorChar]="'_'"
+            [showCursor]="true"
+            [backSpeed]="30"
+            [typeSpeed]="30"
+          >
+          </ngx-typed-writer>
+        </span>
+          ,
+          <br />
+          on a journey from 0 to 100 using 0s and 1s.<br />
+          Yes , I love building stuff
+        </p>
+        <div class="btnAlignCenter mt-5">
+          <button routerLink="/contact" class="default-btn">Reach Out</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<section class="default-section-padding">
+  <div class="container-xl">
+    <div class="row">
+      <div class="col-12 col-lg-7 col-md-7 col-sm-12">
+        <div class="contentBlock">
+          <p
+            class="font-40 line-height-48 text-white font-weight-800 text-align-left zeroPaddingBottom zeroMarginBottom"
+          >
+            About
+          </p>
+          <p
+            class="font-20 line-height-28 text-grey font-weight-800 text-align-left pt-3"
+          >
+            Hey there! I'm Akash Vishwakarma, a Full Stack / MEAN stack web
+            developer from Uttar Pradesh, India. <br /><br />
+            I specialize in building web applications, and I’m passionate about
+            bringing ideas to life online, every day and I love it. <br />When
+            talking about the development world , I may be new to this but Iam
+            totally into this , for sure. I am very driven and love learning new
+            things. <br /><br />
+            Beyond my technical skills , I love playing playing a lot of outdoor
+            games and exploring new places , both virtually and in the real
+            world.
+            <br />
+            <br />
+            For me personally , the journey till now has been really amazing ,
+            From getting fascinated by looking at the evolving tech around us to
+            building stuff that was once impossible to understand , really cool
+            😎 .
+          </p>
+          <button class="default-btn mt-3">Read More</button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5 col-md-5 col-sm-12 mt-4">
+        <div class="aboutImageHolder">
+          <img class="responsiveImage" src="assets/images/about.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="default-section-padding">
+  <div class="container-xl">
+    <p
+      class="font-40 line-height-48 text-white font-weight-800 text-align-left zeroPaddingBottom zeroMarginBottom"
+    >
+      Technical Skills
+    </p>
+    <div class="row mt-3">
+      <div
+        class="col-12 col-lg-2 col-md-2 col-sm-4"
+        *ngFor="let skill of skills"
+      >
+        <div
+          class="skillBlock"
+          [pTooltip]="skill.info"
+          severity="secondary"
+          tooltipPosition="bottom"
+        >
+          <div class="skillLogo" [innerHTML]="skill.logo"></div>
+          <div class="skillName">
+            <div class="actualSkillName">
+              <p
+                class="text-align-left text-white font-20 line-height-28 zeroMarginBottom zeroPaddingBottom"
+              >
+                {{ skill.name }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-2 col-md-2 col-sm-4">
+        <div class="btnHolder">
+          <button class="default-btn">View More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="default-section-padding">
+  <div class="container-xl">
+    <p
+      class="font-40 line-height-48 text-white font-weight-800 text-align-left zeroPaddingBottom zeroMarginBottom"
+    >
+      Projects
+    </p>
+    <div class="row mt-3">
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+        <div class="position-relative">
+          <div
+            class="projectImageHolder my-3 cursor-pointer"
+            (click)="goToWeb('https://xity.in/')"
+          >
+            <img class="responsiveImageCover" src="assets/images/xity.jpg" />
+          </div>
+          <div class="projectOverlay p-4">
+            <p
+              class="text-white text-align-left font-36 font-weight-800 line-height-36"
+            >
+              XITY
+            </p>
+            <p
+              class="text-white text-align-left font-20 font-weight-800 line-height-28"
+            >
+              A platform through which a person/company can run his/its business
+              online .
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+        <div class="position-relative">
+          <div
+            class="projectImageHolder my-3 cursor-pointer"
+            (click)="goToWeb('https://aayrajewellery.com/')"
+          >
+            <img class="responsiveImageCover" src="assets/images/aayra.jpg" />
+          </div>
+          <div class="projectOverlay p-4">
+            <p
+              class="text-white text-align-left font-36 font-weight-800 line-height-36"
+            >
+              AAYRA JEWELLERY
+            </p>
+            <p
+              class="text-white text-align-left font-20 font-weight-800 line-height-28"
+            >
+              An advance e-commerce platform through which a users can buy
+              silver and gold jewelleries.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+        <div class="position-relative">
+          <div
+            class="projectImageHolder my-3 cursor-pointer"
+            (click)="goToWeb('https://danalaxmimatrimonygroup.com/')"
+          >
+            <img
+              class="responsiveImageCover"
+              src="assets/images/danalaxmi.jpg"
+            />
+          </div>
+          <div class="projectOverlay p-4">
+            <p
+              class="text-white text-align-left font-36 font-weight-800 line-height-36"
+            >
+              DANALAXMI
+            </p>
+            <p
+              class="text-white text-align-left font-20 font-weight-800 line-height-28"
+            >
+              A matrimony website through which people can search for their
+              partners online for a specific community.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+        <div class="position-relative">
+          <div
+            class="projectImageHolder my-3 cursor-pointer"
+            (click)="goToWeb('https://saimandhircharlotte.org/')"
+          >
+            <img
+              class="responsiveImageCover"
+              src="assets/images/saiMandir.jpg"
+            />
+          </div>
+          <div class="projectOverlay p-4">
+            <p
+              class="text-white text-align-left font-36 font-weight-800 line-height-36"
+            >
+              SAI MANDIR CHARLOTTE
+            </p>
+            <p
+              class="text-white text-align-left font-20 font-weight-800 line-height-28"
+            >
+              A temple website based out of America.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="positionBtnCenter mt-3">
+      <button routerLink="/projects" class="default-btn">View More</button>
+    </div>
+  </div>
+</section>
+
+<section class="default-section-padding">
+  <div class="container-xl mt-4">
+    <p
+      class="font-40 line-height-48 text-white font-weight-800 text-align-left zeroPaddingBottom zeroMarginBottom text-align-center"
+    >
+      Get In Touch
+    </p>
+    <p
+      class="font-20 line-height-28 text-grey font-weight-800 text-align-left pt-3 text-align-center"
+    >
+      Whether you are starting a project, have business inquiries <br />or just
+      want to say hi, my inbox is always open <br />so feel free to reach out
+      and I will get back to you as soon as possible.
+    </p>
+    <div class="btnAlignCenter mt-5">
+      <button routerLink="/contact" class="default-btn">Reach Out</button>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

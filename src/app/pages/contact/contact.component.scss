@@ -1,0 +1,33 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+}
+.formBody {
+  border: 2px solid #ffffff;
+  width: 70%;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.minHeightScreen{
+  min-height: 70vh;
+}
+
+
+label{
+  color: #ffffff;
+  display: block;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif !important;
+}
+input , textarea{
+  width: 100%;
+  margin: 8px 0;
+  border-radius: 6px;
+  padding: 10px;
+
+}
+.submitBtn{
+  width: 180px;
+}
