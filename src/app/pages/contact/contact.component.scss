@@ -9,6 +9,12 @@
   padding: 20px;
 }
 
+@media (max-width:600px){
+  .formBody{
+    width: 100%;
+  }
+}
+
 .minHeightScreen{
   min-height: 70vh;
 }
