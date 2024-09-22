@@ -1,12 +1,14 @@
 import { AfterViewInit, Component } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { fadeInAnimation } from '../../animations/fadiInAnimation';
 gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
+  animations:[fadeInAnimation]
 })
 export class HomeComponent implements AfterViewInit{
   skills:any[]=[

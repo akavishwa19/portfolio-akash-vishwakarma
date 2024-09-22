@@ -13,6 +13,7 @@ import { TooltipModule } from 'primeng/tooltip';
 import { NgxTypedWriterModule } from 'ngx-typed-writer';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastModule } from 'primeng/toast';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ToastModule } from 'primeng/toast';
     NgxTypedWriterModule,
     ReactiveFormsModule,
     FormsModule,
-    ToastModule
+    ToastModule,
+    HttpClientModule
   ]
 })
 export class PagesModule { }

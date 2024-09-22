@@ -1,0 +1,53 @@
+.items p{
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+.items{
+    padding: 7px 10px;
+    margin: 2px; 
+    cursor: pointer;
+    color: #ffffff;
+}
+.highlightClass{
+    border-left: 7px solid #E11D48 !important;
+    color: #E11D48 !important;
+    font-weight: 600 !important;
+}
+
+.phoneUl{
+    list-style: none; 
+}
+.phoneUl li {
+    color: white;
+    padding: 20px 0;
+    transition: all 0.3s ease;
+  }
+  .phoneUl li:hover {
+    transform: translateY(-3px);
+    color: #e11d48 !important;
+  }
+.closeOffcanvas{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    padding: 5px 10px !important;
+    font-size: 13px !important;
+}
+.projectPanelLarge{
+    display: block;
+}
+.projectPanelSmall{
+    display: none;
+}
+.buttonALignCenter{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:600px) {
+    .projectPanelSmall{
+       display: block;
+    }
+    .projectPanelLarge{
+        display: none;
+    }
+}

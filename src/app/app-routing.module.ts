@@ -12,6 +12,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./shared/shared.module').then((m) => m.SharedModule),
   },
+  {
+    path: 'projects',
+    loadChildren: () =>
+      import('./project/project.module').then((m) => m.ProjectModule),
+  },
 ];
 
 const routerOptions: ExtraOptions = {
@@ -20,7 +25,7 @@ const routerOptions: ExtraOptions = {
 };
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,routerOptions)],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

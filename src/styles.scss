@@ -45,6 +45,9 @@ body {
 .font-20 {
   font-size: clamp(16px, 1.2vw, 20px);
 }
+.font-18 {
+  font-size: clamp(13px, 1.1vw, 18px);
+}
 .font-16 {
   font-size: clamp(13px, 1vw, 16px);
 }
@@ -220,4 +223,20 @@ input,textarea:focus-visible{
 small{
   color:#e11d48 !important;
   font-size: 12px !important;
+}
+.featuredProjectImage{
+  width: 100%;
+}
+.headingParaFlex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+a:hover{
+  color:#e11d48 !important;
+}
+.headingParaFlex p{
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
