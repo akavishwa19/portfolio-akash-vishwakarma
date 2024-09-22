@@ -4,6 +4,7 @@ import { MessageService } from 'primeng/api';
 import { fadeInAnimation } from '../../animations/fadiInAnimation';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../environment/environment.prod';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-contact',
@@ -25,7 +26,8 @@ export class ContactComponent {
   constructor(
     private fb: FormBuilder,
     private messageService: MessageService,
-    private http: HttpClient
+    private http: HttpClient,
+    private location:Location
   ) {}
 
   focusFirstUnfilledField() {
@@ -74,4 +76,7 @@ export class ContactComponent {
         this.sucess();
       });
   }
+  goBack(){
+		this.location.back()
+	}
 }

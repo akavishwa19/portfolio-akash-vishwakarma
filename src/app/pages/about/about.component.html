@@ -1,11 +1,14 @@
 <app-header />
 <section @fadeInOut>
-<section class="default-section-padding">
+<section class="default-section-padding ">
+  <div class="container-xl position-relative">
   <p
     class="font-40 line-height-48 text-white font-weight-800 text-align-left zeroPaddingBottom zeroMarginBottom text-align-center"
   >
     About
   </p>
+  <i (click)="goBack()" class="fa-solid fa-arrow-left text-white font-20 positionLeftAbsolute"></i>
+</div>
 </section>
 <section>
   <div class="container-xl">
@@ -24,61 +27,7 @@
 </section>
 <section>
   <div class="container-xl">
-    <!-- <div class="blockRow">
-   <button class="default-btn m-2">Java</button>   
-   <button class="default-btn m-2">Javascript</button>
-   <button class="default-btn m-2">C++</button>
-   <button class="default-btn m-2">C</button>
-   <button class="default-btn m-2">Typescript</button>
-  </div>
-  <div class="blockRow">
-    <button class="default-btn m-2">HTML</button>   
-    <button class="default-btn m-2">CSS</button>
-    <button class="default-btn m-2">Bootstrap</button>
-    <button class="default-btn m-2">Tailwind css</button>
-    <button class="default-btn m-2">Bootstrap</button>
-    <button class="default-btn m-2">Ng bootstrap</button>
-    <button class="default-btn m-2">Ngx bootstrap</button>
-    <button class="default-btn m-2">Prime ng</button>
-    <button class="default-btn m-2">Ng zoro</button>
-    <button class="default-btn m-2">Chart js</button>
-    <button class="default-btn m-2">Swiper</button>
-    <button class="default-btn m-2">Slick</button>
-    <button class="default-btn m-2">Swiper</button>
-   </div>
-   <div class="blockRow">
-    <button class="default-btn m-2">Angular</button>
-    <button class="default-btn m-2">Rxjs</button>
-    <button class="default-btn m-2">Jquery</button>
-    <button class="default-btn m-2">Ngrx store</button>
-    <button class="default-btn m-2">Signals</button>
-  </div>
-  <div class="blockRow">
-    <button class="default-btn m-2">Node js</button>
-    <button class="default-btn m-2">Mongo db</button>
-    <button class="default-btn m-2">Mongoose</button>
-    <button class="default-btn m-2">Mongo db aggregation</button>
-    <button class="default-btn m-2">Mongo db transactions</button>
-    <button class="default-btn m-2">Moment js</button>
-    <button class="default-btn m-2">Firebase</button>
-    <button class="default-btn m-2">Express</button>    
-    <button class="default-btn m-2">Axios</button>    
-    <button class="default-btn m-2">Sendgrid</button>    
-    <button class="default-btn m-2">Node cron</button>   
-    <button class="default-btn m-2">Node fetch</button>     
-    <button class="default-btn m-2">Jwt</button>    
-    <button class="default-btn m-2">Multer</button>    
-  </div>
-  <div class="blockRow">
-    <button class="default-btn m-2">Git</button>
-    <button class="default-btn m-2">Github</button>
-  </div>
-  <div class="blockRow">
-    <button class="default-btn m-2">VS Code</button>
-    <button class="default-btn m-2">Webstorm</button>
-    <button class="default-btn m-2">IntelliJ Idea</button>
-    <button class="default-btn m-2">Php storm</button>
-  </div> -->
+   
     <div class="blockRow">
       <button class="default-btn m-2">Java</button>
       <button class="default-btn m-2">Javascript</button>
@@ -139,6 +88,43 @@
     <p
       class="text-white font-20 line-height-28 font-weight-500 pb-2 zeroMarginBottom zeroPaddingBottom"
     >
+      Full stack developer
+    </p>
+    <p
+      class="text-white font-20 line-height-28 font-weight-500 pb-2 zeroMarginBottom zeroPaddingBottom"
+    >
+      &#64;
+      <a class="text-rose" href="https://codeship.in/" target="_blank">
+        Codeship pvt ltd
+      </a>
+      (June-2023 - present)
+    </p>
+    <ul class="text-white font-20 line-height-28 font-weight-500 pb-2 px-4">
+      <li>
+        Led the team of developers, providing technical guidance and support as
+        a senior developer.
+      </li>
+      <li>
+        Built dynamic web applications using Angular for the frontend and
+        Node.js, Express, and MongoDB for the backend.
+      </li>
+      <li>
+        Developed and optimized REST APIs with complex queries using MongoDB
+        aggregation pipelines, transactions, and other advanced techniques.
+      </li>
+      <li>
+        Delivered full-fledged applications leveraging the MEAN stack, ensuring
+        scalability and performance.
+      </li>
+      <li>
+        and much more.....
+       </li>
+    </ul>
+  </div>
+  <div class="container-xl">
+    <p
+      class="text-white font-20 line-height-28 font-weight-500 pb-2 zeroMarginBottom zeroPaddingBottom"
+    >
       Frontend developer Intern
     </p>
     <p
@@ -173,42 +159,6 @@
     </ul>
   </div>
 
-  <div class="container-xl">
-    <p
-      class="text-white font-20 line-height-28 font-weight-500 pb-2 zeroMarginBottom zeroPaddingBottom"
-    >
-      Full stack developer
-    </p>
-    <p
-      class="text-white font-20 line-height-28 font-weight-500 pb-2 zeroMarginBottom zeroPaddingBottom"
-    >
-      &#64;
-      <a class="text-rose" href="https://codeship.in/" target="_blank">
-        Codeship pvt ltd
-      </a>
-      (June-2023 - present)
-    </p>
-    <ul class="text-white font-20 line-height-28 font-weight-500 pb-2 px-4">
-      <li>
-        Led the team of developers, providing technical guidance and support as
-        a senior developer.
-      </li>
-      <li>
-        Built dynamic web applications using Angular for the frontend and
-        Node.js, Express, and MongoDB for the backend.
-      </li>
-      <li>
-        Developed and optimized REST APIs with complex queries using MongoDB
-        aggregation pipelines, transactions, and other advanced techniques.
-      </li>
-      <li>
-        Delivered full-fledged applications leveraging the MEAN stack, ensuring
-        scalability and performance.
-      </li>
-      <li>
-        and much more.....
-       </li>
-    </ul>
-  </div>
+  
 </section>
 </section>

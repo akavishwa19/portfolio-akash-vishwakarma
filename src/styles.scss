@@ -241,3 +241,10 @@ a:hover{
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
+.positionLeftAbsolute{
+  position: absolute;
+  left:15px;
+  top:50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

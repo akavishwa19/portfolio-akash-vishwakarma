@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { fadeInAnimation } from '../../animations/fadiInAnimation';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-about',
@@ -8,5 +9,12 @@ import { fadeInAnimation } from '../../animations/fadiInAnimation';
   animations:[fadeInAnimation]
 })
 export class AboutComponent {
+  constructor(
+   
+    private location:Location
+  ) {}
 
+  goBack(){
+    this.location.back()  
+  }
 }

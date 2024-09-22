@@ -1,3 +1,4 @@
+import { Location } from '@angular/common';
 import { Component, inject, TemplateRef } from '@angular/core';
 import { NgbDatepickerModule, NgbOffcanvas, OffcanvasDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
@@ -9,6 +10,10 @@ import { NgbDatepickerModule, NgbOffcanvas, OffcanvasDismissReasons } from '@ng-
 export class ProjectComponent {
   private offcanvasService = inject(NgbOffcanvas);
 	closeResult = '';
+
+	constructor(private location:Location){
+
+	}
 
 	open(content: TemplateRef<any>) {
 		this.offcanvasService.open(content, { ariaLabelledBy: 'offcanvas-basic-title' }).result.then(
@@ -30,5 +35,9 @@ export class ProjectComponent {
 			default:
 				return `with: ${reason}`;
 		}
+	}
+
+	goBack(){
+		this.location.back()
 	}
 }
