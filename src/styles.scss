@@ -49,7 +49,7 @@ body {
   font-size: clamp(13px, 1.1vw, 18px);
 }
 .font-16 {
-  font-size: clamp(13px, 1vw, 16px);
+  font-size: clamp(14px, 1vw, 16px);
 }
 .font-13 {
   font-size: clamp(10px, 0.8vw, 13px);
@@ -232,6 +232,7 @@ small{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 5px;
 }
 a:hover{
   color:#e11d48 !important;

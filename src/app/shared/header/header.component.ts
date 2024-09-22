@@ -32,4 +32,7 @@ export class HeaderComponent {
 				return `with: ${reason}`;
 		}
 	}
+	openResume(){
+		window.open('/assets/documents/akashVishwakarmaResume.pdf', '_blank');
+	}
 }

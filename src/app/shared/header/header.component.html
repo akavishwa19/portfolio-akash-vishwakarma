@@ -3,7 +3,7 @@
     <nav>
       <div class="headerHolder">
         <ul class="headerFlex">
-          <li><button class="default-btn mx-3">Resume</button></li>
+          <li><button (click)="openResume()" class="default-btn mx-3">Resume</button></li>
           <li
             routerLink="/contact"
             routerLinkActive="text-rose"
@@ -43,7 +43,7 @@
               class="fa-solid fa-bars text-white fa-2x"
             ></i>
           </li>
-          <li><button class="default-btn">Resume</button></li>
+          <li><button (click)="openResume()" class="default-btn">Resume</button></li>
         </ul>
       </div>
     </nav>
