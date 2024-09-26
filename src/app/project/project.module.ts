@@ -21,6 +21,7 @@ import { IicccComponent } from './iiccc/iiccc.component';
 import { DocComponent } from './doc/doc.component';
 import { BankComponent } from './bank/bank.component';
 import { SaimandirComponent } from './saimandir/saimandir.component';
+import { SdCoveringComponent } from './sd-covering/sd-covering.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { SaimandirComponent } from './saimandir/saimandir.component';
     IicccComponent,
     DocComponent,
     BankComponent,
-    SaimandirComponent
+    SaimandirComponent,
+    SdCoveringComponent
   ],
   imports: [
     CommonModule,

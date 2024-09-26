@@ -1,12 +1,15 @@
 <app-header />
 <section class="default-section-padding">
   <div class="container-xl position-relative">
-  <p
-    class="font-40 line-height-48 text-white font-weight-800 text-align-left zeroPaddingBottom zeroMarginBottom text-align-center"
-  >
-    Projects
-  </p>
-  <i (click)="goBack()" class="fa-solid fa-arrow-left text-white font-20 positionLeftAbsolute"></i>
+    <p
+      class="font-40 line-height-48 text-white font-weight-800 text-align-left zeroPaddingBottom zeroMarginBottom text-align-center"
+    >
+      Projects
+    </p>
+    <i
+      (click)="goBack()"
+      class="fa-solid fa-arrow-left text-white font-20 positionLeftAbsolute"
+    ></i>
   </div>
 </section>
 <section>
@@ -79,6 +82,17 @@
                 class="font-20 font-dmsans line-height-28 font-weight-600 phonePadding"
               >
                 ZEST NUTRITION
+              </p>
+            </div>
+            <div
+              routerLink="/projects/sd-covering"
+              routerLinkActive="highlightClass"
+              class="items"
+            >
+              <p
+                class="font-20 font-dmsans line-height-28 font-weight-600 phonePadding"
+              >
+                SD COVERING
               </p>
             </div>
             <div
@@ -205,10 +219,10 @@
           </div>
           <div class="projectPanelSmall mb-4">
             <div class="buttonALignCenter">
-            <button (click)="open(content)" class="default-btn">
-              Select another project
-            </button>
-          </div>
+              <button (click)="open(content)" class="default-btn">
+                Select another project
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -295,6 +309,18 @@
           ZEST NUTRITION
         </p>
       </div>
+      <div
+      routerLink="/projects/sd-covering"
+      routerLinkActive="highlightClass"
+      class="items"
+      (click)="offcanvas.dismiss('Cross click')"
+    >
+      <p
+        class="font-20 font-dmsans line-height-28 font-weight-600 phonePadding"
+      >
+        SD COVERING
+      </p>
+    </div>
       <div
         routerLink="/projects/xark"
         routerLinkActive="highlightClass"

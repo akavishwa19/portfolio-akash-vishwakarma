@@ -18,6 +18,7 @@ import { ShammahComponent } from './shammah/shammah.component';
 import { VeevComponent } from './veev/veev.component';
 import { XarkComponent } from './xark/xark.component';
 import { ZestComponent } from './zest/zest.component';
+import { SdCoveringComponent } from './sd-covering/sd-covering.component';
 
 const routes: Routes = [{ path: '', component: ProjectComponent , children:[
   {
@@ -92,6 +93,10 @@ const routes: Routes = [{ path: '', component: ProjectComponent , children:[
   {
     path:'zest-nutrition',
     component:ZestComponent
+  },
+  {
+    path:'sd-covering',
+    component:SdCoveringComponent
   },
 ]}];
 
