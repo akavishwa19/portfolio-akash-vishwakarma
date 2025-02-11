@@ -19,6 +19,11 @@ import { VeevComponent } from './veev/veev.component';
 import { XarkComponent } from './xark/xark.component';
 import { ZestComponent } from './zest/zest.component';
 import { SdCoveringComponent } from './sd-covering/sd-covering.component';
+import { KannadamuhurthumComponent } from './kannadamuhurthum/kannadamuhurthum.component';
+import { YmcaIndiaComponent } from './ymca-india/ymca-india.component';
+import { AquaticAnglesComponent } from './aquatic-angles/aquatic-angles.component';
+import { MiniEcommerceComponent } from './mini-ecommerce/mini-ecommerce.component';
+import { A2aComponent } from './a2a/a2a.component';
 
 const routes: Routes = [{ path: '', component: ProjectComponent , children:[
   {
@@ -97,6 +102,26 @@ const routes: Routes = [{ path: '', component: ProjectComponent , children:[
   {
     path:'sd-covering',
     component:SdCoveringComponent
+  },
+  {
+    path:'kannada-muhurtham',
+    component:KannadamuhurthumComponent
+  },
+  {
+    path:'ymca',
+    component:YmcaIndiaComponent
+  },
+  {
+    path:'aquatic',
+    component:AquaticAnglesComponent
+  },
+  {
+    path:'mini-ecommerce',
+    component:MiniEcommerceComponent
+  },
+  {
+    path:'a-2-a',
+    component:A2aComponent
   },
 ]}];
 

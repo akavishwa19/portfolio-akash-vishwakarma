@@ -33,6 +33,6 @@ export class HeaderComponent {
 		}
 	}
 	openResume(){
-		window.open('/assets/documents/akashVishwakarmaResume.pdf', '_blank');
+		window.open('/assets/documents/Akash_Vishwakarma_Fullstack.pdf', '_blank');
 	}
 }

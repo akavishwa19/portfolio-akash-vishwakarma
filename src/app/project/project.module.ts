@@ -22,6 +22,11 @@ import { DocComponent } from './doc/doc.component';
 import { BankComponent } from './bank/bank.component';
 import { SaimandirComponent } from './saimandir/saimandir.component';
 import { SdCoveringComponent } from './sd-covering/sd-covering.component';
+import { A2aComponent } from './a2a/a2a.component';
+import { KannadamuhurthumComponent } from './kannadamuhurthum/kannadamuhurthum.component';
+import { MiniEcommerceComponent } from './mini-ecommerce/mini-ecommerce.component';
+import { YmcaIndiaComponent } from './ymca-india/ymca-india.component';
+import { AquaticAnglesComponent } from './aquatic-angles/aquatic-angles.component';
 
 
 @NgModule({
@@ -44,7 +49,12 @@ import { SdCoveringComponent } from './sd-covering/sd-covering.component';
     DocComponent,
     BankComponent,
     SaimandirComponent,
-    SdCoveringComponent
+    SdCoveringComponent,
+    A2aComponent,
+    KannadamuhurthumComponent,
+    MiniEcommerceComponent,
+    YmcaIndiaComponent,
+    AquaticAnglesComponent
   ],
   imports: [
     CommonModule,
