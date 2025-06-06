@@ -27,6 +27,7 @@ import { KannadamuhurthumComponent } from './kannadamuhurthum/kannadamuhurthum.c
 import { MiniEcommerceComponent } from './mini-ecommerce/mini-ecommerce.component';
 import { YmcaIndiaComponent } from './ymca-india/ymca-india.component';
 import { AquaticAnglesComponent } from './aquatic-angles/aquatic-angles.component';
+import { VidburnComponent } from './vidburn/vidburn.component';
 
 
 @NgModule({
@@ -54,7 +55,8 @@ import { AquaticAnglesComponent } from './aquatic-angles/aquatic-angles.componen
     KannadamuhurthumComponent,
     MiniEcommerceComponent,
     YmcaIndiaComponent,
-    AquaticAnglesComponent
+    AquaticAnglesComponent,
+    VidburnComponent
   ],
   imports: [
     CommonModule,
